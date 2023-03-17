@@ -11,32 +11,28 @@ public class Ex4_ParEImpar {
     public static void main(String[] args) {
 
         int numero;
-        int numeroQuant;
-        int par = 0;
-        int impar = 0;
+        int quantNumero;
+        int quantPares = 0, quantImpares = 0;
 
         Scanner scan = new Scanner(System.in);
 
         System.out.println("Quantos numeros deseja?: ");
-        numeroQuant = scan.nextInt();
+        quantNumero = scan.nextInt();
 
         int count = 0;
         do {
             System.out.println("Número: ");
             numero = scan.nextInt();
 
-            if(numero % 2 == 0){
-                par++;
-            }
-            else {
-                impar++;
-            }
+            if(numero % 2 == 0) quantPares++;
+            else quantImpares++;
+
 
             count++;
 
-        } while (count < numeroQuant);
+        } while (count < quantNumero);
 
-        System.out.println("NÚmeros Pares: " + par);
-        System.out.println("NÚmeros Impares: " + impar);
+        System.out.println("NÚmeros Pares: " + quantPares);
+        System.out.println("NÚmeros Impares: " + quantImpares);
     }
 }

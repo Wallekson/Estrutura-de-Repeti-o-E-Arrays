@@ -33,12 +33,14 @@ public class Ex2_Consoantes {
 
         } while (count < consoantes.length);
 
-        System.out.println("Consoantes: ");
+        System.out.print("Consoantes: ");
         for (String consoante : consoantes) {
             if (consoante != null)
                 System.out.print(consoante + " ");
 
         }
         System.out.println("Quantidade de consoantes: " + quantConsoantes);
+        System.out.println(consoantes.length); // tamanho do array
+
     }
 }
